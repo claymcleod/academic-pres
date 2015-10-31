@@ -1,0 +1,138 @@
+.slides {
+    margin-top: 2%;
+    margin-left: 2%;
+
+    font-size: 50px;
+    font-family: 'Open Sans', sans;
+    font-weight: 300;
+
+    display: none; /* Turned on after page load */
+}
+
+.slide-header {
+    text-align: left;
+    font-family: 'Open Sans', sans;
+    font-weight: 400;
+}
+
+.slide-body {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.slides .resting-slide {
+    background: url(../img/resting-logo.png) no-repeat center center;
+    background-size: 20%;
+    width: 100%;
+    height: 100%;
+}
+
+.slides .title-slide {
+    margin-top: 2%;
+    margin-left: 2%;
+    position: fixed;
+    bottom: 10%;
+    width: 100%;
+}
+
+@keyframes title-keyframes {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.slides .title-slide h1 {
+    margin-left: 4%;
+    margin-bottom: 2%;
+    line-height: 91px;
+    color: #515151;
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: -3px;
+
+    opacity: 0;
+    animation: title-keyframes 1s linear 2s;
+    animation-fill-mode: forwards;
+}
+
+.slides .title-slide h2 {
+    margin-left: 4%;
+    margin-bottom: 2%;
+    color: darkgrey;
+    font-size: 34px;
+    font-weight: inherit;
+    line-height: 45px;
+    letter-spacing: -2px;
+
+    opacity: 0;
+    animation: title-keyframes 1s linear 2s;
+    animation-fill-mode: forwards;
+}
+
+.slides .title-slide p {
+    margin: 0px;
+    margin-left: 4%;
+    margin-bottom: 2em;
+    color: #797979;
+    line-height:1.3;
+    font-size: 20pt;
+
+    opacity: 0;
+    animation: title-keyframes 1s linear 2s;
+    animation-fill-mode: forwards;
+}   
+
+.slides .title-slide .logo {
+    width:128px;
+    height:128px;
+    margin: 0px;
+    margin-top: 16px;
+    margin-right: 16px;
+    float: right;
+}
+
+@keyframes logo-decorator-keyframes {
+    0% {width: 0px;}
+    100% {width: 360px;}
+}
+
+.slides .title-slide .logo-decorator {
+    width: 360px;
+    height: 160px;
+    background-color: #E6E6E6;
+    margin-bottom:7%;
+    margin-left:-200px;
+    animation: logo-decorator-keyframes 1.5s ease-out;
+    border-radius: 15px;
+}
+
+.slides-progress {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:12px;
+    width:100%;
+    border-radius: 0px;
+
+    background: linear-gradient(269deg, #eeff00, #ffc100, #ff3a00);
+    -webkit-animation: progress-bar-keyframes 26s ease infinite;
+    -moz-animation: progress-bar-keyframes 26s ease infinite; 
+    animation: progress-bar-keyframes 26s ease infinite; 
+
+    @-webkit-keyframes progress-bar-keyframes {
+        0%{background-position:0% 51%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 51%}
+    }
+    @-moz-keyframes progress-bar-keyframes {
+        0%{background-position:0% 51%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 51%}
+    }
+    @keyframes progress-bar-keyframes { 
+        0%{background-position:0% 51%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 51%}
+    }
+
+}
