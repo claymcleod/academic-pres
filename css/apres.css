@@ -106,6 +106,14 @@
     border-radius: 15px;
 }
 
+@keyframes progress-bar-keyframes {
+    0% { -webkit-filter: hue-rotate(0deg); }
+    25% { -webkit-filter: hue-rotate(90deg);}
+    50% { -webkit-filter: hue-rotate(180deg); }
+    75% { -webkit-filter: hue-rotate(270deg);}
+    100% { -webkit-filter: hue-rotate(360deg); }
+}
+
 .slides-progress {
     position:fixed;
     left:0px;
@@ -113,26 +121,11 @@
     height:12px;
     width:100%;
     border-radius: 0px;
-
+    background-color: gold;
+    /*
     background: linear-gradient(269deg, #eeff00, #ffc100, #ff3a00);
-    -webkit-animation: progress-bar-keyframes 26s ease infinite;
-    -moz-animation: progress-bar-keyframes 26s ease infinite; 
-    animation: progress-bar-keyframes 26s ease infinite; 
-
-    @-webkit-keyframes progress-bar-keyframes {
-        0%{background-position:0% 51%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 51%}
-    }
-    @-moz-keyframes progress-bar-keyframes {
-        0%{background-position:0% 51%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 51%}
-    }
-    @keyframes progress-bar-keyframes { 
-        0%{background-position:0% 51%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 51%}
-    }
-
+    -webkit-animation: progress-bar-keyframes 10s linear infinite;
+    -moz-animation: progress-bar-keyframes 10s linear infinite; 
+    animation: progress-bar-keyframes 10s linear infinite; 
+    */
 }
