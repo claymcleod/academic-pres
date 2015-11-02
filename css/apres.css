@@ -121,9 +121,8 @@
     height:12px;
     width:100%;
     border-radius: 0px;
-    background-color: gold;
-    /*
     background: linear-gradient(269deg, #eeff00, #ffc100, #ff3a00);
+    /*
     -webkit-animation: progress-bar-keyframes 10s linear infinite;
     -moz-animation: progress-bar-keyframes 10s linear infinite; 
     animation: progress-bar-keyframes 10s linear infinite; 
