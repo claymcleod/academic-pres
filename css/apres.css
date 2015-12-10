@@ -1,9 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+
 .slides {
     margin-top: 2%;
     margin-left: 2%;
 
-    font-size: 50px;
     font-family: 'Open Sans', sans;
+    font-size: 50px;
     font-weight: 300;
 
     display: none; /* Turned on after page load */
@@ -11,13 +14,14 @@
 
 .slide-header {
     text-align: left;
-    font-family: 'Open Sans', sans;
     font-weight: 400;
 }
 
 .slide-body {
     margin-top: 5%;
     margin-left: 5%;
+    margin-right: 5%;
+    font-size: 35px;
 }
 
 .slides .resting-slide {
@@ -43,7 +47,6 @@
 .slides .title-slide h1 {
     margin-left: 4%;
     margin-bottom: 2%;
-    line-height: 91px;
     color: #515151;
     font-size: 65px;
     font-weight: 600;
@@ -80,7 +83,7 @@
     opacity: 0;
     animation: title-keyframes 1s linear 2s;
     animation-fill-mode: forwards;
-}   
+}
 
 .slides .title-slide .logo {
     width:128px;
@@ -124,7 +127,19 @@
     background: linear-gradient(269deg, #eeff00, #ffc100, #ff3a00);
     /*
     -webkit-animation: progress-bar-keyframes 10s linear infinite;
-    -moz-animation: progress-bar-keyframes 10s linear infinite; 
-    animation: progress-bar-keyframes 10s linear infinite; 
+    -moz-animation: progress-bar-keyframes 10s linear infinite;
+    animation: progress-bar-keyframes 10s linear infinite;
     */
+}
+
+.code-box {
+  width: 50% !important;
+  min-width: 700px;
+  margin: auto !important;
+  font-size: 24px;
+  font-family: 'Source Code Pro', monospace;
+}
+
+ul {
+  line-height: 2em;
 }

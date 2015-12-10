@@ -2,33 +2,56 @@
 <head>
     <title>Understanding the GIL</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:600,400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/apres.css">
+    <link rel="stylesheet" type="text/css" href="css/prism.css">
+
 </head>
 <body>
     <div class="slides">
-        <div class="slide resting-slide">
-        </div>
-        
+        <div class="slide resting-slide"></div>
+
         <div class="slide title-slide">
             <div class="logo-decorator">
                 <img class="logo" src="img/logo.png">
             </div>
-            <h1>Understanding the<br>Python GIL</h2>
-            <h2>Some Subtitle</h2>
-            <p>Clay McLeod</p>
+            <h1>Learning Python</h1>
+            <h2>Lecture 1</h2>
+            <p>Clay McLeod <a href="mailto:clay.l.mcleod@gmail.com">&lt;clay.l.mcleod@gmail.com&gt;</a></p>
         </div>
         <div class="slide">
-            <div class="slide-header">Stuff</div>
+          <div class="slide-header">Quick note</div>
+          <div class="slide-body">
+            <ul>
+              <li>All Examples in these tutorials are using Python 2.7.</li>
+              <ul>
+                <li>For a more in depth discussion of Python 2.7 vs Python 3, check <a href="https://wiki.python.org/moin/Python2orPython3">here</a>.</li>
+              </ul>
+              <li>For instructions on how to download and install Python, check <a href="https://www.python.org/downloads/">here.</a></li>
+              <li>On Unix systems, I recommend installing the <a href="http://ohmyz.sh/">ZSH</a> shell and using the <a href="http://atom.io">Atom</a> IDE.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="slide">
+            <div class="slide-header">Example Code</div>
             <div class="slide-body">
-                Hello World
+                <div class="code-box">
+                  Hello.py
+                  <pre><code class="language-python line-numbers">name = raw_input('What is your name? ')
+print "Hello, "+name</code></pre>
+                  <br/>
+                  Terminal
+                <pre><code class="language-bash">>> python3 Hello.py
+What is your name? Clay
+Hello, Clay</code></pre>
+                </div>
             </div>
         </div>
-        <div class="slide">
-        </div>
+        <div class="slide resting-slide final-slide"></div>
+
     </div>
     <div class="slides-progress"></div>
     <script src="js/jquery.js"></script>
+    <script src="js/prism.js"></script>
     <script src="js/apres.js"></script>
 </body>
 </html>
